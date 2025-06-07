@@ -187,7 +187,7 @@ const roles = [
         <Select
           value={cidade}
           onValueChange={(value) => setCidade(value)}
-          className="w-[180px]"
+          // className="w-[180px]"
         >
           <SelectTrigger>
             <SelectValue />
@@ -264,7 +264,7 @@ const roles = [
             <Select
               value={selectedBairro}
               onValueChange={(value) => setSelectedBairro(value)}
-              id="bairro-select"
+              // id="bairro-select"
             >
               <SelectTrigger>
                 <SelectValue placeholder="Todos os bairros" />
@@ -294,7 +294,7 @@ const roles = [
             <Select
               value={sortOrder}
               onValueChange={(value) => setSortOrder(value as "mais" | "menos")}
-              id="ordenacao-select"
+              // id="ordenacao-select"
             >
               <SelectTrigger>
                 <SelectValue />
