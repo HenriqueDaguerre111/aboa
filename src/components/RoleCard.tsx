@@ -15,7 +15,7 @@ function getMovimentacaoStyle(score: number) {
   return "bg-green-400"
 }
 
-export default function RoleCard({ rua, bairro, movimentacaoScore, tags, cidade }: RoleCardProps) {
+export default function RoleCard({ rua, bairro, movimentacaoScore, tags, cidade: _cidade }: RoleCardProps) {
   const movimentacaoClass = getMovimentacaoStyle(movimentacaoScore)
 
   return (

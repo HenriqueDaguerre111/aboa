@@ -21,9 +21,15 @@ const ALL_TAGS = [
   "open bar",
   "universitário"
 ]
+type Role = {
+  rua: string
+  bairro: string
+  movimentacaoScore: number
+  tags: string[]
+  cidade: string
+}
 
-
-export default function RoleFilter({ cidade, roles }: { cidade: string, roles: any[] }) {
+export default function RoleFilter({ cidade, roles }: { cidade: string, roles: Role[] }) {
   const [selectedTags, setSelectedTags] = useState<string[]>([])
   const [selectedBairro, setSelectedBairro] = useState<string | "">("")
   const [excludeGratis, setExcludeGratis] = useState(false)
